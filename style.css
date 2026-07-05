@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#cabecalho {
+    width: 90%;
+    height: 100px;
+    margin: 20px auto;
+    background-color: #E6D3B3;
+    display: flex;
+    border-radius: 50px;
+    border: 3px solid #990000;
+}
+#pe {
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    height: 100px;
+    background-color: #E6D3B3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    border: 3px solid #990000;
+}
+#homelogo {
+    width: 50px;
+    height: 50px;
+    margin-left: 50px;
+    margin-top: 23px;
+    border-radius: 50%;
+}
+#cpslogo {
+    width: 50px;
+    height: 50px;
+    margin-right: 50px;
+    margin-top: 23px;
+}
+#labubu {
+    background-image: url(assets/jytrrdyk.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    animation: subirFundo 3s ease-out forwards;
+}
+@keyframes subirFundo {
+    from { background-position: center 100%; }
+    to { background-position: center 0%; }
+}
+#navbar {
+    margin: auto;
+}
+#pezinho {
+    margin: auto;
+}
+p {
+    font-size: 20px;
+    color: #990000;
+}
+#quadrado {
+    width: 90%;
+    margin: 20px auto 140px auto;
+    min-height: 480px;
+    background-color: #E6D3B3;
+    border: 3px solid #990000;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+}
+#sugestoes {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    max-height: 200px;
+    overflow-y: auto;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+.list-group-item {
+    cursor: pointer;
+}
+.list-group-item:hover {
+    background-color: #990000;
+    color: white;
+}
+.aluno-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.bordadoaluno, .livrosaluno {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 3px solid #990000;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: rgba(230, 211, 179, 0.9);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    min-width: 250px;
+}
+.btn-padrao {
+    background-color: #E6D3B3;
+    color: #990000;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    border: 2px solid #990000;
+    border-radius: 20px;
+    padding: 8px 16px;
+    transition: 0.3s;
+    cursor: pointer;
+    display: inline-block;
+}
+.btn-padrao:hover {
+    background-color: #990000;
+    color: #E6D3B3;
+    border: 2px solid #990000;
+}
+#areaBusca, #areaRegistro {
+    width: 100%;
+}
+#areaRegistro {
+    display: none;
+}
